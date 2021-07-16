@@ -1,14 +1,14 @@
 #include "ros/ros.h"
-#include "turtlesim_tutorial/geometry_type.h"
+#include "<package_name>/<srv_name>.h"
 #include <cstdlib>
 
 int main(int argc, char **argv)
 {
-        //Initialize node name "move_client"
-        ros::init(argc, argv, "move_client");
+        //Initialize node name "<give a node name>"
+        ros::init(argc, argv, "<node name>");
 
         ros::NodeHandle n;
-        ros::ServiceClient client = n.serviceClient<turtlesim_tutorial::geometry_type>("geometry_type_move");
+        ros::ServiceClient client = n.serviceClient<package_name::srv_name>("geometry_type_move");
         turtlesim_tutorial::geometry_type  srv;
 
         // Input requests 
