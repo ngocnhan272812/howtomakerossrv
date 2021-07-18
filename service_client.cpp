@@ -8,7 +8,7 @@ int main(int argc, char **argv)
         ros::init(argc, argv, "<node name>");
 
         ros::NodeHandle n;
-        ros::ServiceClient client = n.serviceClient<package_name::srv_file_name>("<service name>");
+        ros::ServiceClient client = n.serviceClient<package_name::srv_file_name>("<service_name>");
         package_name>::<srv_flie_name>.h  srv;
 
         /**** Input requests **** 
