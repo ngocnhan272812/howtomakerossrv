@@ -18,7 +18,7 @@ int main(int argc, char **argv)
         ros::init(argc, argv, "<give a server name>");
         ros::NodeHandle n;
 
-        ros::ServiceServer service = n.advertiseService("geometry_type_move", <bool_function>);   //Service is created and advertised over ROS
+        ros::ServiceServer service = n.advertiseService("service_name", <bool_function>);   //Service is created and advertised over ROS
        
 	
         ros::spin();
